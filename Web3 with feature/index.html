@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home Bakery 🍞 - Sensor Monitoring</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <h1>🍞 Home Bakery - Sensor Monitoring by Kelompok 11</h1>
+
+  <!-- Tab Navigation -->
+  <div class="nav-buttons">
+    <button onclick="showTab('historyTab')">📊 Riwayat Sensor</button>
+    <button onclick="showTab('inputTab')">📦 Loading In Bahan Baku</button>
+  </div>
+
+  <!-- Tab 1: Riwayat Sensor -->
+  <div id="historyTab">
+    <h2>Riwayat Sensor Gudang</h2>
+    <button onclick="loadSensorData()">🔄 Muat Data Sensor</button>
+
+    <table id="sensorTable">
+      <thead>
+        <tr>
+          <th>Waktu</th>
+          <th>ID Sensor</th>
+          <th>Lokasi</th>
+          <th>Tahapan</th>
+          <th>Suhu (°C)</th>
+          <th>Kelembapan (%)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <canvas id="chart" height="100"></canvas>
+  </div>
+
+  <!-- Tab 2: Konfirmasi Waktu Loading -->
+  <div id="inputTab" style="display: none;">
+    <h2>📦 Barang Stok Masuk Gudang</h2>
+
+    <label for="datetimeInput">Masukkan Tanggal & Waktu (misal: 6/18/2025, 11:07:25 PM):</label><br />
+    <input type="text" id="datetimeInput" placeholder="MM/DD/YYYY, hh:mm:ss AM/PM" style="width: 100%; padding: 8px;" />
+    <br /><br />
+    <button onclick="confirmLoading()">Konfirmasi Loading In Bahan Baku</button>
+
+    <div id="resultBox" style="margin-top: 20px;">
+      <h3>📈 Data Sensor Ditemukan:</h3>
+      <p id="resultData">Belum ada data.</p>
+      <div id="qrcode"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
