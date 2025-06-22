@@ -51,6 +51,7 @@ sudo chmod a+rw /dev/ttyUSB0
 ```
 untuk mendapatkan permission untuk membaca data dari sensor
 ![image](https://github.com/user-attachments/assets/05124d78-52aa-4365-b2fd-a28afc1d9c35)
+
 Maka setelah itu tampilan dari Terminal dari sensor akan berubah menjadi berikut:
 ![image](https://github.com/user-attachments/assets/9f869be4-cba3-4ebb-8f3a-35911d182e3e)
 
