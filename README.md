@@ -40,12 +40,15 @@ terlihat pada tampilan awal tertera “Gagal baca sensor: Permission denied.
 
 ### 2. Lalu buat tab baru untuk terminal, 
 kemudian masukkan command berikut
-```bash
+```
 sudo dmesg | grep ttyUSB*
-``` berguna untuk mengidentifikasi koneksi dari USB konverter dari modbus sensor SHT20
+```
+berguna untuk mengidentifikasi koneksi dari USB konverter dari modbus sensor SHT20
 kemudian command
-```bash
-sudo chmod a+rw /dev/ttyUSB0``` (sesuaikan dengan deteksi yang ditampilkan), untuk mendapatkan permission untuk membaca data dari sensor
+```
+sudo chmod a+rw /dev/ttyUSB0
+(sesuaikan dengan deteksi yang ditampilkan)```
+untuk mendapatkan permission untuk membaca data dari sensor
 ![image](https://github.com/user-attachments/assets/05124d78-52aa-4365-b2fd-a28afc1d9c35)
 Maka setelah itu tampilan dari Terminal dari sensor akan berubah menjadi berikut:
 ![image](https://github.com/user-attachments/assets/9f869be4-cba3-4ebb-8f3a-35911d182e3e)
