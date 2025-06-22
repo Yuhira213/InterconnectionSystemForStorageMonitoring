@@ -6,10 +6,10 @@
 Kualitas bahan mentah seperti tepung dan ragi sangat mempengaruhi hasil akhir roti, sehingga kestabilan suhu dan kelembapan dalam ruang penyimpanan menjadi faktor krusial. Pada industri roti skala rumahan yang masih mengandalkan proses manual, pemantauan kondisi lingkungan secara konvensional tidak efisien dan rawan kesalahan. Untuk menjawab tantangan ini, dikembangkan sistem pemantauan suhu dan kelembapan berbasis komunikasi serial Modbus RTU dari sensor ke perangkat pengendali, yang datanya dikirim melalui Rust-based TCP server ke backend. Data kemudian disimpan dalam InfluxDB sebagai time-series database, dianalisis dan divisualisasikan secara real-time melalui Grafana serta GUI berbasis PyQt5. Integrasi sistem blockchain dan Web3 digunakan untuk menjamin keamanan dan keotentikan data pemantauan, serta memungkinkan transparansi dalam pencatatan histori penyimpanan. Sistem ini menjamin kontrol lingkungan yang akurat dan terpercaya tanpa bergantung pada platform IoT konvensional.
 
  ## Authors
-1. Yudhistira Ananda Kuswantoro (2042231015)
-2. Lusty Hanna Isyajidah        (2042231045)
-3. M. Daffi Aryatama            (2042231075)
-4. Ahmad Radhy                  (Supervisor)
+1. Ahmad Radhy                  (Supervisor)
+2. Yudhistira Ananda Kuswantoro (2042231015)
+3. Lusty Hanna Isyajidah        (2042231045)
+4. M. Daffi Aryatama            (2042231075)
 
 # Untuk Laporan dan Powerpoint juga dapat diakses di tautan berikut:
 ## Link Laporan:
