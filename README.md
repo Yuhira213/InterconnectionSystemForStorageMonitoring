@@ -34,7 +34,7 @@ kemudian masukkan command cd sensor kemudian enter, lalu masukkan command
 ```
 cargo run
 ```
- lalu enter, untuk membaca kemudian mengirimkan data dari bacaan sensor ke Rust TCP Server. Maka tampilannya akan seperti berikut:
+lalu enter, untuk membaca kemudian mengirimkan data dari bacaan sensor ke Rust TCP Server. Maka tampilannya akan seperti berikut:
 ![WhatsApp Image 2025-06-19 at 01 49 57_04ee2861](https://github.com/user-attachments/assets/1a3b32ee-89fe-4a1e-be3f-ec3af137b3ac)
 terlihat pada tampilan awal tertera “Gagal baca sensor: Permission denied.
 
@@ -50,9 +50,11 @@ sudo chmod a+rw /dev/ttyUSB0
 (sesuaikan dengan deteksi yang ditampilkan)
 ```
 untuk mendapatkan permission untuk membaca data dari sensor
+
 ![image](https://github.com/user-attachments/assets/05124d78-52aa-4365-b2fd-a28afc1d9c35)
 
 Maka setelah itu tampilan dari Terminal dari sensor akan berubah menjadi berikut:
+
 ![image](https://github.com/user-attachments/assets/9f869be4-cba3-4ebb-8f3a-35911d182e3e)
 
  ### 3. Lalu buat tab baru untuk terminal,
