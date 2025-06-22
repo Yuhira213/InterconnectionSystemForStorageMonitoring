@@ -30,7 +30,14 @@ Kualitas bahan mentah seperti tepung dan ragi sangat mempengaruhi hasil akhir ro
 
 ### Library for PyQT5
 
-## Langkah Pengkomunikasian Seluruh Sistem
+# Langkah Pengkomunikasian Seluruh Sistem
+## Diharapkan untuk Clone semua isi repository dengan unduh atau
+```
+https://github.com/Yuhira213/InterconnectionSystemForStorageMonitoring.git
+```
+
+## Terlebih dahulu
+
 ### 1. Klik kanan pada folder kemudian klik ‘Open in Terminal’
 kemudian masukkan command cd sensor kemudian enter, lalu masukkan command 
 ```
