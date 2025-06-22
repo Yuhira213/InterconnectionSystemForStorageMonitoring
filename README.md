@@ -30,7 +30,11 @@ Kualitas bahan mentah seperti tepung dan ragi sangat mempengaruhi hasil akhir ro
 
 ## Langkah Pengkomunikasian Seluruh Sistem
 ### 1. Klik kanan pada folder kemudian klik ‘Open in Terminal’
-kemudian masukkan command cd sensor kemudian enter, lalu masukkan command cargo run lalu enter, untuk membaca kemudian mengirimkan data dari bacaan sensor ke Rust TCP Server. Maka tampilannya akan seperti berikut:
+kemudian masukkan command cd sensor kemudian enter, lalu masukkan command 
+```
+cargo run
+```
+ lalu enter, untuk membaca kemudian mengirimkan data dari bacaan sensor ke Rust TCP Server. Maka tampilannya akan seperti berikut:
 ![WhatsApp Image 2025-06-19 at 01 49 57_04ee2861](https://github.com/user-attachments/assets/1a3b32ee-89fe-4a1e-be3f-ec3af137b3ac)
 terlihat pada tampilan awal tertera “Gagal baca sensor: Permission denied.
 
