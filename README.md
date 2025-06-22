@@ -47,7 +47,8 @@ berguna untuk mengidentifikasi koneksi dari USB konverter dari modbus sensor SHT
 kemudian command
 ```
 sudo chmod a+rw /dev/ttyUSB0
-(sesuaikan dengan deteksi yang ditampilkan)```
+(sesuaikan dengan deteksi yang ditampilkan)
+```
 untuk mendapatkan permission untuk membaca data dari sensor
 ![image](https://github.com/user-attachments/assets/05124d78-52aa-4365-b2fd-a28afc1d9c35)
 Maka setelah itu tampilan dari Terminal dari sensor akan berubah menjadi berikut:
