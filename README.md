@@ -11,6 +11,12 @@ Kualitas bahan mentah seperti tepung dan ragi sangat mempengaruhi hasil akhir ro
 3. M. Daffi Aryatama            (2042231075)
 4. Ahmad Radhy                  (Supervisor)
 
+# Untuk Laporan dan Powerpoint juga dapat diakses di tautan berikut:
+## Link Laporan:
+### https://its.id/m/LaporanISIKel11
+## Link PPT
+### https://its.id/m/PPTISIKel11
+
 ## Features
 1. **Penyimpanan Database dari hasil bacaan sensor di InfluxDB**
 2. **Tampilan GUI dengan Grafana dan PyQT5**
