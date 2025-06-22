@@ -31,11 +31,10 @@ Kualitas bahan mentah seperti tepung dan ragi sangat mempengaruhi hasil akhir ro
 ### Library for PyQT5
 
 # Langkah Pengkomunikasian Seluruh Sistem
-## Diharapkan untuk Clone semua isi repository dengan unduh atau
+## Diharapkan untuk mengunduh zip atau melakukan clone semua isi repository ini dengan memasukkan
 ```
 https://github.com/Yuhira213/InterconnectionSystemForStorageMonitoring.git
 ```
-
 ## Terlebih dahulu
 
 ### 1. Klik kanan pada folder kemudian klik ‘Open in Terminal’
@@ -66,7 +65,7 @@ Maka setelah itu tampilan dari Terminal dari sensor akan berubah menjadi berikut
 
 ![image](https://github.com/user-attachments/assets/9f869be4-cba3-4ebb-8f3a-35911d182e3e)
 
- ### 3. Lalu buat tab baru untuk terminal,
+### 3. Lalu buat tab baru untuk terminal,
 kemudian masukkan command ```ganache``` , kemudian akan muncul tampilan seperti gambar berikut:
 
 ![image](https://github.com/user-attachments/assets/d581a9a3-fae3-463e-9ee6-c331ff982113)
