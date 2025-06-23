@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/5d846425-78c5-407f-95e6-65c78bfffaa4)# 🍞 “Sistem Monitoring Temperatur dan kelembapan pada Penyimpanan Bahan Mentah Pabrik Roti Rumahan”
+# 🍞 “Sistem Monitoring Temperatur dan kelembapan pada Penyimpanan Bahan Mentah Pabrik Roti Rumahan”
 ![WhatsApp Image 2025-06-19 at 02 06 13_ed644b8e](https://github.com/user-attachments/assets/71c2dc38-d43d-430f-a74f-165ad48adb8d)
 ![WhatsApp Image 2025-06-19 at 02 06 13_e7cefb18](https://github.com/user-attachments/assets/dc646fad-02b0-46cd-8ae9-2ad23ee06435)
 
