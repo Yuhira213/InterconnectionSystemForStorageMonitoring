@@ -1,4 +1,4 @@
-# 🍞 “Sistem Monitoring Temperatur dan kelembapan pada Penyimpanan Bahan Mentah Pabrik Roti Rumahan”
+![image](https://github.com/user-attachments/assets/5d846425-78c5-407f-95e6-65c78bfffaa4)# 🍞 “Sistem Monitoring Temperatur dan kelembapan pada Penyimpanan Bahan Mentah Pabrik Roti Rumahan”
 ![WhatsApp Image 2025-06-19 at 02 06 13_ed644b8e](https://github.com/user-attachments/assets/71c2dc38-d43d-430f-a74f-165ad48adb8d)
 ![WhatsApp Image 2025-06-19 at 02 06 13_e7cefb18](https://github.com/user-attachments/assets/dc646fad-02b0-46cd-8ae9-2ad23ee06435)
 
@@ -18,7 +18,7 @@ Kualitas bahan mentah seperti tepung dan ragi sangat mempengaruhi hasil akhir ro
 ### https://its.id/m/PPTISIKel11
 
 ## Features
-1. **Penyimpanan Database dari hasil bacaan sensor di InfluxDB**
+1. **Penyimpanan data dari hasil bacaan sensor secara time series di InfluxDB**
 2. **Tampilan GUI dengan Grafana dan PyQT5**
 3. **Terintegrasi dengan sistem Blockchain**
 4. **Menggunakan Web3 untuk Visualisasi Interaktif**
@@ -162,6 +162,18 @@ kemudian akan muncul tampilan dari extension metamask. Kemudian klik connect mak
 
 ### 12. Untuk membuka Database dari hasil bacaan sensor
 - Buka http://localhost:8086 untuk menuju tampilan web InfluxDB
+  ![image](https://github.com/user-attachments/assets/a69937d0-7dc7-4b39-b16f-fdc3923bc08c)
+- Kemudian beri checklist pada
+  1) From Bucket: ISIMonitor
+  2) _measurement: monitoring
+  3) _field: humidity dan temperature
+  4) Filter:  i. location: Ruang Gudang Bahan Baku
+             ii. sensor_id: SHT20-Gudang Tepung
+            iii. stage: Tepung Gandum
+  5) Kemudian atur Window Period menjadi:
+     custom:5s, Aggregate Function Auto, kemudian bagian penampilan menjadi 'last', setelah itu Submit.
+
+  ### Buka bagian 'script editor' dan salin semua query untuk bisa menampilkan grafik pada grafana
 
 ### 13. Untuk menghubungkan ke Grafana.
 - Pastikan Grafana service sudah berjalan, dengan memasukkan command berikut
@@ -169,6 +181,45 @@ kemudian akan muncul tampilan dari extension metamask. Kemudian klik connect mak
   sudo systemctl status grafana-server
   ```
 - Lalu buka http://localhost:3000, dan tampilan web Grafana akan ditampilkan.
+- Setelah itu ke bagian ‘Connections’ klik ‘add new connection’, kemudian pilih influxDB
+- 
+  ![Screenshot 2025-06-23 081001](https://github.com/user-attachments/assets/e70135ae-582c-4e6c-b635-770d205443c1)
+  
+- Klik ‘add new data source’
+  
+  ![image](https://github.com/user-attachments/assets/2456b78f-3665-4b45-a368-67b91b394c91)
+  
+- Kemudian dalam settingnya ubah Query Languagenya menjadi Flux, kemudian dalam HTTPnya masukkan URL dari InfluxDB
+  
+  ![image](https://github.com/user-attachments/assets/340b9639-24b1-4828-992a-60ef13d4634f)
+  
+- Kemudian pada Organization dan Token sesuaikan dengan yang ada dari InfluxDB dan profil InfluxDB. Kemudian klik Save & Test.
+  
+  ![image](https://github.com/user-attachments/assets/0435d0e4-cd73-4ab0-81dd-2172a093e13d)
+
+- Setelah menambahkan data source pada step sebelumnya, kemudian kita menuju halaman ‘Dashboards’, lalu klik ‘Create dashboard’.
+  
+  ![image](https://github.com/user-attachments/assets/f856a5ad-a39d-4b75-a54a-30fd033e234f)
+
+- Kemudian klik ‘Add visualization’
+  
+  ![image](https://github.com/user-attachments/assets/6eeb04a0-dba1-4ae6-b369-215cede1ba60)
+
+- Pilih influx tadi sebagai data sourcenya
+  
+  ![image](https://github.com/user-attachments/assets/7ad596f0-6750-488f-80a3-5c46794af7e8)
+
+- Lalu tempelkan salinan dari script query dari InfluxDB ke query di Visualisasi Grafana dan sesuaikan dengan data apa yang ingin ditampilkan
+- Kemudian setelah penyesuaian selesai, klik Save Dashboard
+
+### 14. Untuk membuka GUI menggunakan PyQT5
+- Buka terminal dari Folder yang berisikan clone dari git ini, kemudian jalankan command
+  ```
+  python3 QTgui.py
+  ```
+  kemudian tekan enter, maka akan muncul tampilan seperti berikut
+  
+  ![image](https://github.com/user-attachments/assets/e343074a-cf9a-4a1d-aa11-ef80fff8ea7d)
 
 ## Tampilan Dashboard dan Hasil Data
 ### 1. Tampilan Dashboard dan Grafik pada InfluxDB
