@@ -1,4 +1,4 @@
-# 🍞 “Sistem Monitoring Temperatur dan kelembapan pada Penyimpanan Bahan Mentah Pabrik Roti Rumahan” 🍞
+# 🍞 “Sistem Monitoring Temperatur dan kelembapan pada Penyimpanan Bahan Mentah Pabrik Roti Rumahan”
 ![WhatsApp Image 2025-06-19 at 02 06 13_ed644b8e](https://github.com/user-attachments/assets/71c2dc38-d43d-430f-a74f-165ad48adb8d)
 ![WhatsApp Image 2025-06-19 at 02 06 13_e7cefb18](https://github.com/user-attachments/assets/dc646fad-02b0-46cd-8ae9-2ad23ee06435)
 
@@ -180,7 +180,7 @@ Pada Gambar kedua diatas menunjukkan hasil visualisasi grafik temperatur dan kel
 
 ![image](https://github.com/user-attachments/assets/f90a71f7-1eb8-4d7a-8d5b-f894f19c706f)
 
-Pada Gambar ketiga diatas menunjukkan fitur dari Web3 yang digunakan sebagai pengonfirmasian bahan baku yang sedang melakukan loading in ke gudang bahan baku, yang kemudian ketika dikonfirmasikan maka akan menampilkan status dari data sensor dari waktu tersebut.
+Pada Gambar ketiga diatas menunjukkan fitur dari Web3 yang digunakan sebagai pengonfirmasian bahan baku yang sedang melakukan loading in ke gudang bahan baku, yang kemudian ketika dikonfirmasikan dengan menggunakan timestamp yang sesuai format maka akan menampilkan status dari data sensor dari waktu tersebut dan juga kontak untuk pengonfirmasian proses loading in barang.
 
 ### 4. Hasil Interface pada Qt
 ![image](https://github.com/user-attachments/assets/e343074a-cf9a-4a1d-aa11-ef80fff8ea7d)
