@@ -25,16 +25,29 @@ Kualitas bahan mentah seperti tepung dan ragi sangat mempengaruhi hasil akhir ro
 
 ## Requirements
 ### Software
-1. Rust Programming Language 1.86.0
-2. Industrial SHT20 Temperature and Humidity Sensor
-3. InfluxDB2 Client
-4. Grafana
-5. Ganache V 7.9.2
+1. Rust Programming Language V 1.86.0
+2. Python 3.13
+3. Industrial SHT20 Temperature and Humidity Sensor
+4. InfluxDB Client
+5. Grafana
+6. Ganache V 7.9.2
 
 ### Extension
 1. Metamask
 
 ### Library for PyQT5
+1. tkinter
+2. io
+3. matplotlib
+4. collections
+5. requests
+6. serde
+7. reqwest
+atau bisa juga dengan memasukkan command berikut:
+```
+pip3 install matplotlib requests tkinter io serde reqwest collections
+```
+
 
 # Langkah Pengkomunikasian Seluruh Sistem
 ## Diharapkan untuk mengunduh zip atau melakukan clone semua isi repository ini dengan memasukkan
